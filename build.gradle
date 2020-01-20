@@ -1,0 +1,7 @@
+task build {
+    doLast {
+        exec {
+            commandline 'docker', 'build', '.', '-t', 'container'
+        }
+    }
+}
